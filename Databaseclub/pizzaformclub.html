@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration and Login</title>
+    <link rel="stylesheet" type="text/css" href="pizzaformclub.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login" class="form">
+            <h2>Login Form</h2>
+            <form action="login.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div id="signup" class="form">
+            <h2>Sign Up Form</h2>
+            <form action="register.php" method="post">
+                <label for="new_username">New Username:</label>
+                <input type="text" id="new_username" name="new_username" required>
+                <label for="new_password">New Password:</label>
+                <input type="password" id="new_password" name="new_password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
