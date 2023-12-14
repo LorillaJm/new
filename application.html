@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/bootstrap-3.3.4/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/roboto.css">
+  <style>
+    #body_pat {
+      background-color: white;
+
+    }
+
+    div#container {
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .navbar {
+      background: #337ab7;
+      text-align: center;
+      border-radius: 0;
+      box-shadow: 3px 3px 15px #ccc;
+    }
+
+    .navbar-default .navbar-nav>li {}
+
+    .navbar-default .navbar-nav img {
+      height: 80px;
+      width: 85px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+      color: #fff;
+      font-family: 'roboto';
+      font-size: 18px;
+      margin-top: 22px;
+
+    }
+
+    aside h1 {
+      background-color: #337ab7;
+      background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+      border-radius: 0px 0 0 0px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+      box-sizing: border-box;
+      color: #fff;
+      font-size: 1.2em;
+      margin: 0 0 24px 12px;
+      padding: 15px 0 15px 12px;
+      position: relative;
+
+    }
+
+    aside a {
+      font: 0px 'roboto';
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 20px 15px;
+
+    }
+
+    aside a:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    aside h1:after {
+      border-color: #263746 transparent transparent #263746;
+      border-style: solid;
+      border-width: 6px;
+      bottom: -12px;
+      content: "";
+      position: absolute;
+      right: 0;
+    }
+
+    aside h1:before {
+      color: #fff;
+      content: "";
+      font: 26px sans-serif;
+      position: absolute;
+      right: 12px;
+      top: -2px;
+    }
+
+    .other-block {}
+
+    .featured-blocks {
+      background: transparent;
+      text-align: center;
+      margin-top: 65px;
+    }
+
+    .copy-rights {
+      margin-right: 15px;
+      padding-top: 60px;
+      padding-bottom: 100px;
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+      line-height: 24px;
+      font-family: 'roboto';
+    }
+
+    .copy-rights strong a {
+      color: #f9b701;
+      font-size: 16px;
+      font-family: 'roboto';
+    }
+
+    .copy-rights strong a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .copy-rights a {
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    .copy-rights a:hover {
+      color: #ccc;
+    }
+
+    .other-block ul li {
+      list-style: none;
+      font-size: 16px;
+      padding: 0 0 6px 26px;
+      background: url(images/arrow.gif) no-repeat left top;
+      margin-left: -25px;
+    }
+
+    .other-block ul li a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    hr.style-six {
+      padding: 0;
+      border: none;
+      height: 1px;
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+      background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+      color: #333;
+      text-align: center;
+    }
+
+    .featured-blocks h1.portal {
+      font-size: 25px;
+      margin-left: -25px;
+      margin-top: 7px;
+    }
+
+    .other-block hr.style-six {
+      margin-top: 34px;
+    }
+
+    .other-block h1.services {
+      margin-left: -6px;
+      margin-top: -0px;
+      margin-bottom: -18px;
+      font-family: 'roboto';
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .other-block h1.services1 {
+      margin-left: -28px;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .top-image img {
+      width: 100%;
+      height: 126px;
+      margin: 0 auto 10px;
+      display: block;
+      -moz-border-radius: 0%;
+      -webkit-border-radius: 0%;
+      border-radius: 0%;
+      opacity: 0.8;
+      margin-bottom: 10px;
+      margin-top: -80px;
+      margin-right: -100px;
+    }
+
+    .hover-img:hover img {
+      -webkit-filter: brightness(0) invert(1);
+      filter: brightness(0) invert(1);
+    }
+
+    .hover-img:hover :not(img) {
+      display: block;
+      border-radius: 10px;
+      color: #ffffff;
+      background-color: #337ab7;
+    }
+
+    #school:hover {
+      color: #fff;
+    }
+
+    .img-style {
+      padding-top: 10px;
+    }
+
+    .caption {
+      padding-bottom: 5px;
+      font-family: Roboto;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <div id="container">
+      
+  <div style='overflow-x:auto;'>
+  <table width='100%' border='0' cellpadding=0 cellspacing=0 style='background-color:#337ab7 !important'>  <tr>    <td>      <table width='100%' cellpadding=0 cellspacing=0 border=0>        <tr>          <td align='center' class='responsee1' width='100%' style='background-position:center;background-repeat:no-repeat;background-image:url(./images/ban2.png);'><img src='./images/banner1_calinog.png'>
+
+  </td>        </tr>      </table>    </td>  </tr></table>
+  </div>      <div class="container">
+        <div class="featured-blocks">
+          <div class="row">
+            <div class="col-sm-3 col-md-offset-2 ">
+              <div class="hover-img">
+                <a style="text-decoration: none;" href="index.html">
+                  <img class="img-style" src="images/monitor-with-mouse-cursor.png" alt="">
+                  <div class="caption">
+                    <h4>Online Application</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="hover-img">
+                <a style="text-decoration: none;" href="faculty/index.php">
+                  <img src="images/open-book.png" class="img-style">
+                  <div class="caption">
+                    <h4>Faculty</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="hover-img">
+                <a style="text-decoration: none;" href="students/index.php">
+                  <img src="images/user-silhouette.png" class="img-style">
+                  <div class="caption">
+                    <h4>Student/Alumni</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <Br /><Br /><br /><Br />
+          </div>
+          <div class="row">
+            <div class="col-sm-3 col-md-offset-2">
+              <div class="hover-img">
+                <a style="text-decoration: none;" href="studaccounts/index.php">
+                  <img src="images/bar-chart.png" class="img-style">
+                  <div class="caption">
+                    <h4>Finance</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="hover-img">
+                <a style="text-decoration: none;" href="registrar/index.php">
+                  <img src="images/archive.png" class="img-style">
+                  <div class="caption">
+                    <h4>Registrar</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="hover-img">
+                <a style="text-decoration: none;" href="cashier/index.php">
+                  <img src="images/cash-register-machine.png" class="img-style">
+                  <div class="caption">
+                    <h4>Cashier</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="featured-blocks">
+          <div class="row">
+            <div class="col-sm-4 col-md-5 col-md-offset-4"></div>
+            <div class="col-sm-4 col-md-5 col-md-offset-4">
+
+            </div>
+            <div class="col-sm-6 col-md-7 col-md-offset-3">
+              <div class="copy-rights">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
